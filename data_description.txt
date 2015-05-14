@@ -1,0 +1,32 @@
+
+Data from http://palanteer.sis.smu.edu.sg/fdma2012/
+
+
+The “raw” data used in this competition has two types: publisher database and click database, both provided in CSV format. The publisher database records the publisher’s (aka partner’s) profile and comprises several fields:
+
+publisherid – Unique identifier of a publisher.
+bankaccount – Bank account associated with a publisher (may be empty)
+address – Mailing address of a publisher (obfuscated; may be empty)
+status – Label of a publisher, which can be the following:
+“OK” - Publishers whom BuzzCity deems as having healthy traffic (or those who slipped their detection mechanisms)
+“Observation” – Publishers who may have just started their traffic or their traffic statistics deviates from system wide average. BuzzCity does not have any conclusive stand with these publishers yet
+“Fraud” – Publishers who are deemed as fraudulent with clear proof. Buzzcity suspends their accounts and their earnings will not be paid
+On the other hand, the click database records the click traffics and has several fields:
+
+id – Unique identifier of a particular click
+numericip – Public IP address of a clicker/visitor
+deviceua – Phone model used by a clicker/visitor
+publisherid – Unique identifier of a publisher
+adscampaignid – Unique identifier of a given advertisement campaign
+usercountry – Country from which the surfer is
+clicktime – Timestamp of a given click (in YYYY-MM-DD format)
+publisherchannel – Publisher's channel type, which can be the following:
+ad – Adult sites
+co – Community
+es – Entertainment and lifestyle
+gd – Glamour and dating
+in – Information
+mc – Mobile content
+pp – Premium portal
+se – Search, portal, services
+referredurl - URL where the ad banners were clicked (obfuscated; may be empty).
